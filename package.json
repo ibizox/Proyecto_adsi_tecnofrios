@@ -1,0 +1,11 @@
+{
+  "name": "backend-tecnofrios",
+  "version": "1.0.0",
+  "description": "Mi proyecto Adsi",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.jsx"
+  },
+  "author": "Fernando G",
+  "license": "ISC"
+}
