@@ -4,8 +4,17 @@
   "description": "Mi proyecto Adsi",
   "main": "index.js",
   "scripts": {
-    "start": "node index.jsx"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "author": "Fernando G",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
