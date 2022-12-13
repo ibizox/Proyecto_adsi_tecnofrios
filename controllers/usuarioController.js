@@ -1,5 +1,5 @@
 const User = require('../models/Usuario');
-const { use } = require('../routes/usuarioRoutes');
+
 
 
 
@@ -9,9 +9,9 @@ const consultarUsuario = async(req, res) => {
 
     const users = await User.findOne({ where: { email: email}});
     if( !users ){
-        res.json({msg: "El email ingresado no existe."})
+        res.json({msg: "El email ingresado no existe.", ok: false})
     } else {
-        password != users.password ? res.json({msg: "La contraseña es incorrecta."}) : res.json(users);
+        password != users.password ? res.json({msg: "La contraseña es incorrecta.", ok:false}) : res.json({msg:`Bienvenido, ${users.nombre}`, ok: true});
     }
 
     
@@ -31,4 +31,8 @@ const registrarUsuario = async(req, res) => {
     res.json(newUser);
 };
 
-module.exports = { consultarUsuario, registrarUsuario };
+
+
+module.exports = { 
+    consultarUsuario, registrarUsuario 
+};

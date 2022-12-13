@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const dbName = 'prueba';
+const dbName = 'Tecnofrios_full';
 const userName = 'root';
 const password = 'adminDB12*'; 
 

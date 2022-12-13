@@ -7,4 +7,4 @@ router.post("/registro", registrarUsuario);
 
 
 
-module.exports = router;
+module.exports = router ;
